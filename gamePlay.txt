@@ -1,0 +1,53 @@
+Welcome to Chris's Game!
+
+This document provides an overview of how to interact with the game interface, start rounds, place bets, and manage gameplay.
+
+1. Starting the Game:
+Launch the Game: Open the index.html file in a web browser to launch the game interface.
+
+Interface Layout: The game interface includes areas for Player 1 and Player 2, a central game surface for card display, and a control section with various buttons.
+
+2. Understanding the Game Interface:
+Deck Area: Displays the back of the current deck of cards as a visual cue without revealing its contents.
+
+Player Areas: Each player has a designated area where their cards and current bets are displayed.
+
+Game Surface: Shows the cards drawn from the deck as the game progresses.
+Scoreboard: Displays each player's current balance and the outcomes of each round.
+
+3. How to Place Bets:
+Setting Bets: At the start of each round, Player 1 sets the bet amount and odds using the input field labeled 'Bet Amount'.
+Matching or Passing Bets:
+
+To match the bet, Player 2 clicks the 'Play' button.
+
+To pass, Player 2 clicks the 'Pass' button, automatically granting the round win to Player 1 and transferring the bet amount accordingly.
+
+4. Starting a Round:
+Initiate the Game: Once the bets are set and players have selected their sequences, click the 'Start Game' button to begin.
+
+Card Drawing: Cards will be drawn automatically, and the game will check if the sequences selected by the players appear on the game surface.
+
+5. Playing the Game:
+Watch the Draw: Players watch as cards are drawn and displayed on the game surface.
+
+Sequence Checking: The game automatically checks if either player's sequence appears among the drawn cards.
+
+Round Outcome: The first player whose sequence appears wins the round.
+
+6. Winning a Round:
+Payout: If a player's sequence appears first, they win the round, and the bet amount is transferred according to the odds set by Player 1.
+
+Result Display: The results are displayed on the game surface and the scoreboard is updated accordingly.
+
+7. Clearing Choices and Resetting the Game:
+Resetting Choices: To clear the current selections and reset for a new round, click the 'Clear Choices' button.
+
+Maintaining Scores: This action resets the game area but maintains the scores and balances, allowing for a fresh start without restarting the entire game.
+
+8. Additional Information:
+Game Duration: The game continues until players choose to stop or refresh the page.
+
+Balance Monitoring: Players should monitor their balance as it updates after each round based on wins and losses, and adjust their strategies accordingly.
+
+Enjoy playing Chris's Game!

@@ -1,0 +1,128 @@
+/* General body and layout settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Modern dark background */
+    color: #e0e0e0; /* Soft light text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2C2F33; /* Dark header/footer for contrast */
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+}
+
+main {
+    flex-grow: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Game area styling */
+#game-area {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+#deck-area, #game-surface, #player1-area, #player2-area {
+    padding: 20px;
+    background-color: #202225; /* Slightly lighter background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Deeper shadows for 3D effect */
+}
+
+#deck-area {
+    grid-column: 1 / -1;
+}
+
+#player1-area, #player2-area {
+    min-height: 150px;
+}
+
+#game-surface {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card visuals */
+.card-image, .card-slot {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-slot:hover, .card-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,255,255,0.5);
+}
+
+/* Control area */
+#control-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #7289DA; /* Discord-like blue for a modern touch */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #5b6eae;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.8);
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    width: 100px;
+}
+
+/* Information display elements */
+#player1-balance, #player2-balance, #player1-sequence, #player2-sequence, #deck-count, #game-message {
+    background-color: #23272A; /* Dark slate for info blocks */
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #game-area {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #player1-area, #player2-area, #game-surface {
+        grid-column: 1;
+    }
+}

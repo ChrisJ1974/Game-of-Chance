@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chris's Game</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Chris's Game</h1>
+			<div id="player-info">
+				<div id="player1-label">Player 1</div>
+				<div id="player2-label">Player 2</div>
+			</div>
+		</header>
+
+		<main>
+			<section id="game-area">
+				<div id="deck-area">
+					<h2>Deck</h2>
+					<img
+						src="path/to/card-back-image.jpg"
+						alt="Card Deck"
+						class="card-image" />
+					<div id="deck-count">Cards Remaining in Deck: 52</div>
+					<!-- Visualization of the card deck -->
+				</div>
+
+				<div id="player1-area">
+					<h3>Player 1 Cards</h3>
+					<div id="player1-balance">Player 1 Balance: $1000</div>
+					<div id="player1-bet">
+						Bet Amount: $0
+						<!-- Default value which will be dynamically updated -->
+					</div>
+					<div id="player1-sequence">
+						Player 1 Sequence:
+						<div class="card-slot" id="player1-card1">Select Card 1</div>
+						<div class="card-slot" id="player1-card2">Select Card 2</div>
+						<div class="card-slot" id="player1-card3">Select Card 3</div>
+					</div>
+					<!-- Display Player 1's card choices here -->
+				</div>
+
+				<div id="game-surface">
+					<div id="card-placeholders">
+						<!-- placeholders for cards drawn images -->
+						
+					</div>
+					<h2>Game Surface</h2>
+					<div id="game-message">Welcome to Chris's Game!</div>
+				</div>
+
+				<div id="player2-area">
+					<h3>Player 2 Cards</h3>
+					<div id="player2-balance">Player 1 Balance: $1000</div>
+					<div id="player2-bet">
+						Bet Amount: $0
+						<!-- Default value which will be dynamically updated -->
+					</div>
+					<div id="player2-sequence">
+						Player 2 Sequence:
+						<div class="card-slot" id="player2-card1">Select Card 1</div>
+						<div class="card-slot" id="player2-card2">Select Card 2</div>
+						<div class="card-slot" id="player2-card3">Select Card 3</div>
+					</div>
+					<!-- Display Player 1's card choices here -->
+				</div>
+			</section>
+
+			<section id="control-area">
+				<button id="start-game">Start Game</button>
+				<button id="clear-choices">Clear Choices</button>
+				<label for="bet-amount">Bet Amount:</label>
+				<input type="number" id="bet-amount" min="20" max="500" />
+				<button id="pass-button">Pass</button>
+				<button id="play-button">Play</button>
+			</section>
+		</main>
+
+		<footer>
+			<div id="score-board">
+				<h3>Scoreboard</h3>
+				<!-- Dynamically updated scores and pots -->
+			</div>
+		</footer>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
